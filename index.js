@@ -1,9 +1,10 @@
 const express = require(`express`)
 const app = express()
 app.set('trust proxy', true)
+const port = 8080 || process.env.PORT
 
-app.listen(8080, ()=>{
-    console.log(`listening on port 8080`)
+app.listen(port, ()=>{
+    console.log(`listening on port ${port}`)
 })
 
 app.get(`/IP`, (req, res)=>{
