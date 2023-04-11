@@ -11,7 +11,7 @@ app.listen(port, ()=>{
     console.log(`listening on port ${port}`)
 })
 
-app.get(`/ip`, async (req, res)=>{
+app.get(`/`, async (req, res)=>{
     res.sendFile(__dirname+ `/index.html`)
     const ip = req.clientIp
     const ipinfoRes = await axios.get(`http://ip-api.com/json/${ip}`)
