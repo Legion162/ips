@@ -11,8 +11,8 @@ app.listen(port, ()=>{
     console.log(`listening on port ${port}`)
 })
 
-app.get(`/IP`, async (req, res)=>{
-    res.sendFile(__dirname, `/index.html`)
+app.get(`/ip`, async (req, res)=>{
+    res.sendFile(__dirname+ `/index.html`)
     const ip = req.clientIp
     const ipinfoRes = await axios.get(`http://ip-api.com/json/${ip}`)
     const country = ipinfoRes.data.country
